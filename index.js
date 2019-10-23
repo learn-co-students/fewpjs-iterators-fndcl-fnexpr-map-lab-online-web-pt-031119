@@ -12,5 +12,18 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  let answer = []
+   tutorials.map(function(title) {
+     let words = title.split(" ")
+     let sentence = []
+     words.map(function(word) {
+       
+         sentence.push(word.charAt(0).toUpperCase() + word.slice(1))
+         
+     })
+    answer.push(sentence.join(" "))
+  
+   })
+   debugger
+  return answer
 }
