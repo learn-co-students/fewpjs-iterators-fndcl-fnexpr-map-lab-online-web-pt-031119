@@ -17,7 +17,7 @@ const titleCased = () => {
     let capWords = words.map(
       word => word.charAt(0).toUpperCase() + word.slice(1)
     );
-    let capTutorials = capWords.join(" ");
-    return capTutorials;
+    let capTutorial = capWords.join(" ");
+    return capTutorial;
   });
 };
